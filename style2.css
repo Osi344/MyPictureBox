@@ -1,0 +1,134 @@
+body{
+    overflow: hidden;
+}
+
+h1 {
+    top: 0;
+}
+
+nav {
+    display: inline;
+    /* background-color: lightblue; */
+    /* overflow-x: auto; */
+    /* overflow-y: hidden; */
+    overflow: auto;
+    white-space: nowrap;
+    background-image: url('../images/tekstura.com.jpg');
+    margin: 10px;
+}
+
+nav button {
+    margin: 5px;
+    padding: 5px;
+    border-width: 2px;
+    border-color: cadetblue;
+    background-color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav button, h2, .comment {
+    font-size: 0.5em;
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: cadetblue;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.vigneDiv {
+    display:block;
+    background-color: burlywood;
+    overflow: auto;
+    border-width: 1px;
+    border-color: rgb(8, 9, 117);
+    margin: 5px;
+    /* max-width: 200px; */
+    /* min-width: 40px; */
+}
+
+.thumb {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 10% 10%
+}
+
+.visuDiv {
+    display: block;
+    background-color: burlywood;
+    border-width: 1px;
+    border-color: rgb(8, 9, 117);
+    margin: 5px;
+    /* width: calc(100%-60px); */
+}
+
+.full {
+    width: 50%;
+    height: auto;
+}
+
+@media (min-width:576px) {
+    nav button, h2, .comment {
+        font-size: 0.6em;
+    }
+    .mainDiv {
+        flex-direction: row;
+    }
+    .vigneDiv {
+        max-width: 200px;
+        min-width: 60px;
+    }
+    .thumb {
+        width: 4em;
+        height: 4em;
+    }
+    .full {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width:768px) {
+    nav button, h2, .comment {
+        font-size: 0.7em;
+    }
+    .thumb {
+        width: 4.5em;
+        height: 4.5em;
+    }
+    .full {
+        width: 88%;
+        height: auto;
+    }
+}
+
+@media (min-width:992px) {
+    nav {
+        flex-wrap: wrap;
+    }
+    nav button, h2, .comment {
+        font-size: 0.8em;
+    }
+    .thumb {
+        width: 5em;
+        height: 5em;
+    }
+}
+
+@media (min-width:1200px) {
+    nav button, h2, .comment {
+        font-size: 0.9em;
+    }
+    .vigneDiv {
+        max-width: 200px;
+        min-width: 100px;
+    }
+    .thumb {
+        width: 6em;
+        height: 6em;
+    }
+}
