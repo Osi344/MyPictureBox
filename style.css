@@ -1,6 +1,6 @@
-body {
+/* body { */
     /* overflow: hidden; */
-}
+/* } */
 
 h1 {
     top: 0;
@@ -15,17 +15,6 @@ nav {
     overflow: auto;
     margin-bottom: 5px;
 }
-
-/* .nav a { */
-    /* float: left; */
-    /* padding: 12px; */
-    /* color: white; */
-    /* text-decoration: none; */
-    /* font-size: 17px; */
-}
-/* .nav a:hover { */
-    /* background-color: #000; */
-/* } */
 
 nav button {
     margin: 5px;
@@ -81,19 +70,31 @@ nav button, h2, .comment {
     flex-wrap: nowrap;
     flex-grow: 1;
     align-items: center;
-    justify-content: space-around;
-    background-color: burlywood;
+    justify-content: initial;
     max-height: 780px;
 }
 
-.visuDiv .full {
+.pFull .full {
     width: 50%;
     max-width: 800px;
     height: auto;
+    /* display: none; */
+}
+
+.pFull{
     display: none;
 }
 
-.full:target {
+/* .visuDiv .ficGene { */
+    /* display: none; */
+/* } */
+
+/* .ficGene:target{ */
+    /* display: block; */
+/* } */
+
+/* Affichage de l'image de classe "full" de la vignette ciblée par l'id */
+.pFull:target {
     display: block;
 }
 
