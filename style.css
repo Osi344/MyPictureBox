@@ -13,21 +13,20 @@ nav {
     flex-grow: 1;
     background-color: lightblue;
     overflow: auto;
-    /* background-image: url('../images/tekstura.com.jpg'); */
     margin-bottom: 5px;
 }
-.nav a {
-    float: left;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .nav a:hover {
-    background-color: #000;
-  }
-  
+
+/* .nav a { */
+    /* float: left; */
+    /* padding: 12px; */
+    /* color: white; */
+    /* text-decoration: none; */
+    /* font-size: 17px; */
+}
+/* .nav a:hover { */
+    /* background-color: #000; */
+/* } */
+
 nav button {
     margin: 5px;
     padding: 5px;
@@ -67,11 +66,13 @@ nav button, h2, .comment {
     width: 40px;
     height: 40px;
     margin: 2px;
-    /* border-radius: 10% 10% */
+    filter: grayscale(70%);
 }
 
 .thumb:hover {
+    filter: none;
     box-shadow: 0 0 4px 2px rgba(50, 50, 50, 0.5);
+    border-color: #ffffff;
 }
 
 .visuDiv {
@@ -84,19 +85,18 @@ nav button, h2, .comment {
     background-color: burlywood;
     max-height: 780px;
 }
-/* #test{ */
-    /* width: 4em; */
-    /* heigth: 4em; */
-/* } */
-#full {
+
+.visuDiv .full {
     width: 50%;
+    max-width: 800px;
     height: auto;
+    display: none;
 }
 
-#visu{
-    width: 800px;
-    height: 600px;
+.full:target {
+    display: block;
 }
+
 @media (min-width:576px) {
     nav button, h2, .comment {
         font-size: 0.6em;
@@ -114,7 +114,7 @@ nav button, h2, .comment {
         width: 4em;
         height: 4em;
     }
-    #full {
+    .full {
         width: 100%;
         height: auto;
     }
@@ -132,7 +132,7 @@ nav button, h2, .comment {
         width: 5em;
         height: 5em;
     }
-    #full {
+    .full {
         width: 88%;
         height: auto;
     }
@@ -152,6 +152,10 @@ nav button, h2, .comment {
         width: 6em;
         height: 6em;
     }
+    .full {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (min-width:1200px) {
@@ -159,7 +163,6 @@ nav button, h2, .comment {
         font-size: 0.9em;
     }
     .vigneDiv {
-        /* flex-direction: row; */
         max-width: 140px;
     }
     .thumb {
