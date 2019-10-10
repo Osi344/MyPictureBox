@@ -20,13 +20,18 @@ nav button {
     margin: 5px;
     padding: 5px;
     border-width: 2px;
-    border-color: cadetblue;
-    background-color: aliceblue;
+    border-color: rgb(139, 161, 161);
+    background-color: cadetblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav button, h2, .comment {
     font-size: 0.5em;
+}
+
+nav button:hover{
+    border-color:  rgb(9, 110, 114);
+    background-color: aliceblue;
 }
 
 .mainDiv {
