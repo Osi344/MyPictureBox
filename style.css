@@ -1,9 +1,6 @@
-/* body { */
-    /* overflow: hidden; */
-/* } */
-
 h1 {
     top: 0;
+    text-shadow: 3px 10px 15px rgb(50, 60, 112);
 }
 
 nav {
@@ -27,6 +24,7 @@ nav button {
 
 nav button, h2, .comment {
     font-size: 0.5em;
+    border-radius: 5px;
 }
 
 nav button:hover{
