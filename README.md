@@ -1,2 +1,4 @@
 # MyPictureBox
-web responsive
+- HTML + CSS + media queries
+- web responsive
+- clickable pictures
